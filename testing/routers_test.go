@@ -8,19 +8,20 @@ import (
 
 	// "github.com/gin-gonic/gin"
 	// customerControllers "github.com/putragabrielll/fwg17-cinematix-be/src/controllers/customer"
-	// "github.com/putragabrielll/fwg17-cinematix-be/src/lib" 
+	"github.com/putragabrielll/fwg17-cinematix-be/src/lib"
 	"github.com/putragabrielll/fwg17-cinematix-be/src/services"
 	"github.com/stretchr/testify/assert"
 )
 
 func TestListAllMovies(t *testing.T) {
-	// db := lib.DbConnection()
+	lib.DbConnection()
 
 	// c := gin.Context{}
 
 	req, _ := http.NewRequest("GET", "/movies", nil)
+	// response := httptest.NewRecorder()
+	// Router().ServeHTTP(response, req)
 
-	// rr := httptest.NewRecorder()
 	// customerControllers.ListAllMovies(c, req)
 
 	// if reflect.TypeOf(req) != reflect.TypeOf(&services.ResponseList{}) {
